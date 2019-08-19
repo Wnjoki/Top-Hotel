@@ -1,2 +1,3 @@
-#Top Hotel Website
-Still need to add pointers to the images for them to show
+#Top Hotel Website in progress...
+
+ I still need to add pointers to the images for them to show on the index landing page
