@@ -1,0 +1,50 @@
+body{
+    background-color:orange;
+
+}
+body p{
+    color:#fff;
+}
+.jumbotron{
+
+    background-color: skyblue;
+    text-align:center;
+    margin-top:50px;
+}
+
+.jumbotron h1{
+
+    color:#fff;
+}
+
+.jumbotron p{
+
+    color:#fff;
+
+}
+
+
+.navbar-custom{
+    background-color:orange;
+}
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    padding: 0px;
+    width: auto;
+    border-radius:30px;
+
+}
+
+.navbar-nav>li.navbar-right{
+    float: right !important;
+    color: green !important;
+
+}
+.nav-link{
+    padding:1px;
+    float:right;
+    font-size:20px;
+}
