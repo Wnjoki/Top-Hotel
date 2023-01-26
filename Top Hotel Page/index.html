@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
   <head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="style.css">
 	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script>
+	  function downloadPDF(url) {
+		  // Create an anchor element
+		  var a = document.createElement("a");
+		  // Set its href to the PDF URL
+		  a.href = url;
+		  // Set the download attribute
+		  a.download = "document.pdf";
+		  // Add the element to the DOM
+		  document.body.appendChild(a);
+		  // Click the element to trigger the download
+		  a.click();
+		  // Remove the element from the DOM
+		  document.body.removeChild(a);
+	  }
+
+  </script>
   </head>
   <body>
   	<!--This is our nav section-->
@@ -74,7 +91,7 @@
 		  <hr class="my-2">
 		  <p>Laden Sie sich unsere Hotelbroschüre als PDF Datei zum betrachten auf Ihrem Computer herunnter </p>
 		  <p class="lead">
-			<a class="btn btn-primary btn-lg" href="#" role="button">Broschüre herunterladen</a>
+			<a class="btn btn-primary btn-lg" onclick="downloadPDF('https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80')">Broschüre herunterladen</a>
 		  </p>
 		</div>
 	</div>
